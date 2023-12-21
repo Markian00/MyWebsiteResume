@@ -25,7 +25,6 @@ root.render(
   <React.StrictMode>
       <div style={gap}></div>
     <App style={back}/>
-      <Home style={back}/>
   </React.StrictMode>
 );
 

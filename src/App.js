@@ -9,19 +9,23 @@ import Projects from "./pages/Projects"
 import Academics from "./pages/Academics";
 import Resume from "./pages/Resume.js"
 import NavB from "./components/NavB"
+import Home from "./pages/Home";
 
 
 function App() {
-    return (
 
+    return (
+        <>
         <Router>
             <NavB/>
             <Routes>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/Academics" element={<Academics/>}/>
                 <Route path="/Resume" element={<Resume/>}/>
                 <Route path="/Projects" element={<Projects/>}/>
             </Routes>
         </Router>
+        </>
 
 
         /*

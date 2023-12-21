@@ -2,22 +2,26 @@ import React from "react"
 
 import "./animations.css"
 
+import Cpp from "./icons/C++ Logo Inverted.png"
+import Java from "./icons/Java Logo Inverted.png"
+import Python from "./icons/Python Logo Inverted.png"
+import JavaScript from "./icons/JavaScript Logo Inverted.png"
+import CSS from "./icons/Css Logo Inverted.png"
+import HTML from "./icons/HTML Logo Inverted.png"
+
 import placeholder from "./placeholder.png"
 
 const Home = () => {
 
-    const rmargins = {
-        marginTop: '0px',
-        marginBottom: '0px'
-    }
-
     const homeheading = {
-        background: 'white',
+        background: 'black',
         margin: 'auto',
-        padding: '0px',
+        marginTop: '0px',
+        padding: '30px',
         textAlign: 'center',
         fontFamily: 'sans-serif',
-        fontSize: '50px',
+        fontSize: '30px',
+        color: "#EDC25E",
     }
 
     const bubble_paragraph_left = {
@@ -149,25 +153,6 @@ const Home = () => {
         lineHeight: '40px'
     }
 
-    const margin_right = {
-
-        //background: '#9e7db1',
-        fontSize: '23px',
-        borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        width: '50%',
-        marginTop: '-10px',
-        //marginRight: '10px',
-        marginLeft: '100px',
-        flexDirection: 'column',
-        flexBasis: '100%',
-        flex: '1',
-        display: 'flex',
-        padding: '30px',
-        color: '#ffffff',
-        lineHeight: '40px'
-    }
-
     const centered = {
         margin: 'auto',
         textAlign: 'center'
@@ -188,19 +173,48 @@ const Home = () => {
         alignItems: 'flex-start',
         width: "100%"
     }
+    const divsplitlist = {
+        background: 'black',
+        flex: '1',
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        alignItems: 'flex-start',
+        width: "50%",
+        textAlign: 'center',
+        margin: 'auto'
+    }
 
     const back = {
         background: 'black'
     }
 
-    const vertdivide = {
-        background: ''
-    }
-
     const seperator = {
         background: '#9A7623',
         width: "100%",
-        height: "20px"
+        height: "20px",
+        marginTop: "30px"
+
+    }
+
+    const dash = {
+        background: '#9A7623',
+        width: "35%",
+        height: "5px",
+        margin: "auto",
+        color: '#9A7623'
+    }
+
+    const imagecol = {
+        background: 'black',
+        marginBottom: '40px',
+        width: '33%',
+        flexDirection: 'column',
+        flexBasis: '100%',
+        flex: '1',
+        display: 'flex',
+        color:'white',
+        textAlign: 'center'
     }
 
     return (
@@ -222,72 +236,93 @@ const Home = () => {
             </div>
             <div style={seperator}></div>
 
-            <div style={divsplit}  className="fade">
+            <h1 style={homeheading}>
+                What I Know So Far
+            </h1>
+
+            <div style={divsplit}>
+                <div style={imagecol} className="fade">
+                    <img src={Cpp} alt="C++ Logo" style={fill}/>
+                    <p> C++ </p>
+                </div>
+
+                <div style={imagecol} className="fade">
+                    <img src={Java} alt="Java Logo" style={fill}/>
+                    <p> Java </p>
+                </div>
+
+                <div style={imagecol} className="fade">
+                    <img src={Python} alt="Python Logo" style={fill}/>
+                    <p> Python </p>
+                </div>
+
+            </div>
+
+            <div style={divsplit}>
+                <div style={imagecol} className="fade">
+                    <img src={JavaScript} alt="JavaScript Logo" style={fill}/>
+                    <p> JavaScript </p>
+                </div>
+
+                <div style={imagecol} className="fade">
+                    <img src={CSS} alt="CSS Logo" style={fill}/>
+                    <p> CSS </p>
+                </div>
+
+                <div style={imagecol} className="fade">
+                    <img src={HTML} alt="HTML Logo" style={fill}/>
+                    <p> HTML </p>
+                </div>
+
+            </div>
+
+            <div style={seperator}></div>
+
+            <div style={divsplitlist}>
                 <div style={bubble_paragraph_left}>
-                    <h4 style={smallheight}>
-                        Technical Skills
+                    <h4 style={smallheight} className="fade">
+                        Frameworks
                     </h4>
-                    <p style={smallheight}>
-                        C++
-                    </p>
-                    <p style={smallheight}>
-                        Python
-                    </p>
-                    <p style={smallheight}>
-                        Java
-                    </p>
-                    <p style={smallheight}>
-                        JavaScript
-                    </p>
-                    <p style={smallheight}>
-                        Node.js
-                    </p>
-                    <p style={smallheight}>
+                    <hr style={dash} className="fade"/>
+                    <p style={smallheight} className="fade">
                         React
                     </p>
-                    <p style={smallheight}>
+                    <p style={smallheight} className="fade">
                         PyGame
                     </p>
-                    <p style={smallheight}>
+                    <p style={smallheight} className="fade">
                         Qt GUI Design
                     </p>
-                    <p style={smallheight}>
+                    <p style={smallheight} className="fade">
                         Swing GUI Design
+                    </p>
+                    <p style={smallheight} className="fade">
+                        Node.js
                     </p>
 
                     <p></p>
                 </div>
                 <div style={bubble_paragraph_right}>
-                    <h4 style={smallheight}>
+                    <h4 style={smallheight} className="fade">
                         Personal Interests
                     </h4>
-                    <p style={smallheight}>
-                        Hackathons
-                    </p>
-                    <p style={smallheight}>
+                    <hr style={dash} className="fade"/>
+                    <p style={smallheight} className="fade">
                         Discrete Math
                     </p>
-                    <p style={smallheight}>
-                        Psychology
-                    </p>
-                    <p style={smallheight}>
+                    <p style={smallheight} className="fade">
                         Finance
                     </p>
-                    <p style={smallheight}>
-                        Gaming
-                    </p>
-                    <p style={smallheight}>
+                    <p style={smallheight} className="fade">
                         Body Building
                     </p>
-                    <p style={smallheight}>
-                        Nutrition
+                    <p style={smallheight} className="fade">
+                        Gaming
                     </p>
-                    <p style={smallheight}>
+                    <p style={smallheight} className="fade">
                         Golf
                     </p>
-                    <p style={smallheight}>
-                        Bouldering
-                    </p>
+
                     <p></p>
                 </div>
             </div>

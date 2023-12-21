@@ -55,6 +55,7 @@ const divsplit = {
     width: "100%"
 }
 const Projects = () => {
+    window.scrollTo(0,0)
     return (
         <div>
             <h1>Under Construction</h1>
