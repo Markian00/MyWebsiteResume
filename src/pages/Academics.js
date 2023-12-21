@@ -7,7 +7,7 @@ const homeheading = {
     fontFamily: 'sans-serif',
     fontSize: '40px',
 }
-const About = () => {
+const Academics = () => {
     return (
         <div>
             <h1 style={homeheading}>A Little About Myself</h1>
@@ -15,6 +15,6 @@ const About = () => {
     );
 };
 
-export default About
+export default Academics
 
 //CODE BY MARKIAN VORONOVYCH 2023

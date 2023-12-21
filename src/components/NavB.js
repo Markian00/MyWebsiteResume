@@ -29,8 +29,8 @@ class NavB extends React.Component{
                         <NavLink to="/Resume">
                             Resume
                         </NavLink>
-                        <NavLink to="/About">
-                            About Me
+                        <NavLink to="/Academics">
+                            Academics
                         </NavLink>
                         <NavLink to="/Projects">
                             Projects
