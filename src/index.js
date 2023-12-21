@@ -16,12 +16,16 @@ const gap = {
     padding: '60px'
 }
 
+const back = {
+    background: 'black'
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <div style={gap}></div>
-    <App/>
-      <Home/>
+    <App style={back}/>
+      <Home style={back}/>
   </React.StrictMode>
 );
 

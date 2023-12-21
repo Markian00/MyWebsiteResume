@@ -1,0 +1,8 @@
+@keyframes comeIn {
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.fade{
+    animation: comeIn 5s;
+}
