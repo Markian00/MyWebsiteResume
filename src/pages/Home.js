@@ -8,6 +8,8 @@ import Python from "./icons/Python Logo Inverted.png"
 import JavaScript from "./icons/JavaScript Logo Inverted.png"
 import CSS from "./icons/Css Logo Inverted.png"
 import HTML from "./icons/HTML Logo Inverted.png"
+import GoldLogo from "./icons/MyLogoGold.png"
+import GoldCircle from "./icons/GoldLogoCircle.png"
 
 import placeholder from "./placeholder.png"
 
@@ -24,31 +26,14 @@ const Home = () => {
         color: "#EDC25E",
     }
 
-    const bubble_paragraph_left = {
-
-        //background: 'linear-gradient(90deg, rgba(158,172,231,1) 0%, rgba(137,138,241,1) 100%)',
-        fontSize: '23px',
-        width: '50%',
-        //borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        //marginRight: '20px',
-        flexDirection: 'column',
-        flexBasis: '100%',
-        flex: '1',
-        display: 'flex',
-        color: '#ffffff',
-        lineHeight: '40px'
-    }
-
-    const bubble_paragraph_right = {
+    const bubble_paragraph = {
 
         //background: 'white',
         fontSize: '23px',
         width: '50%',
         //borderRadius: '25px',
         fontFamily: 'sans-serif',
-        marginBottom: '20px',
+        marginBottom: '0px',
         //marginLeft: '20px',
         flexDirection: 'column',
         flexBasis: '100%',
@@ -180,7 +165,7 @@ const Home = () => {
         flexDirection: 'row',
         flexWrap: 'wrap',
         alignItems: 'flex-start',
-        width: "50%",
+        width: "80%",
         textAlign: 'center',
         margin: 'auto'
     }
@@ -193,7 +178,8 @@ const Home = () => {
         background: '#9A7623',
         width: "100%",
         height: "20px",
-        marginTop: "30px"
+        marginTop: "20px",
+        marginBottom: "20px"
 
     }
 
@@ -215,6 +201,11 @@ const Home = () => {
         display: 'flex',
         color:'white',
         textAlign: 'center'
+    }
+
+    const logo = {
+        marginTop: "70px",
+        width: '35%'
     }
 
     return (
@@ -279,22 +270,23 @@ const Home = () => {
             <div style={seperator}></div>
 
             <div style={divsplitlist}>
-                <div style={bubble_paragraph_left}>
+
+                <div style={bubble_paragraph}>
                     <h4 style={smallheight} className="fade">
                         Frameworks
                     </h4>
                     <hr style={dash} className="fade"/>
                     <p style={smallheight} className="fade">
-                        React
+                        ReactJS
                     </p>
                     <p style={smallheight} className="fade">
                         PyGame
                     </p>
                     <p style={smallheight} className="fade">
-                        Qt GUI Design
+                        Qt GUI
                     </p>
                     <p style={smallheight} className="fade">
-                        Swing GUI Design
+                        Swing GUI
                     </p>
                     <p style={smallheight} className="fade">
                         Node.js
@@ -302,7 +294,12 @@ const Home = () => {
 
                     <p></p>
                 </div>
-                <div style={bubble_paragraph_right}>
+
+                <div className="fade">
+                    <img src={GoldCircle} alt="Website Logo" style={logo}/>
+                </div>
+
+                <div style={bubble_paragraph}>
                     <h4 style={smallheight} className="fade">
                         Personal Interests
                     </h4>
@@ -326,6 +323,8 @@ const Home = () => {
                     <p></p>
                 </div>
             </div>
+
+            <div style={seperator}></div>
 
             <div style={back}>
                 <img className="fade" src={placeholder} alt="Markian's Face" style={fill}/>
