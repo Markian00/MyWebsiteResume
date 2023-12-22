@@ -34,7 +34,8 @@ const Home = () => {
         //borderRadius: '25px',
         fontFamily: 'sans-serif',
         marginBottom: '0px',
-        //marginLeft: '20px',
+        marginLeft: '0px',
+        marginRight: '0px',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
@@ -228,7 +229,7 @@ const Home = () => {
             <div style={seperator}></div>
 
             <h1 style={homeheading}>
-                What I Know So Far
+                Markian's Skills
             </h1>
 
             <div style={divsplit}>

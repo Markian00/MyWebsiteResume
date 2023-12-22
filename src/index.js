@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Footer from './components/Footer'
 import App from './App';
 
 import Home from "./pages/Home"
@@ -25,6 +26,7 @@ root.render(
   <React.StrictMode>
       <div style={gap}></div>
     <App style={back}/>
+      <Footer/>
   </React.StrictMode>
 );
 
