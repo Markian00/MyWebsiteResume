@@ -10,6 +10,7 @@ import Academics from "./pages/Academics";
 import Resume from "./pages/Resume.js"
 import NavB from "./components/NavB"
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/Resume" element={<Resume/>}/>
                 <Route path="/Projects" element={<Projects/>}/>
             </Routes>
+            <Footer/>
         </Router>
         </>
 

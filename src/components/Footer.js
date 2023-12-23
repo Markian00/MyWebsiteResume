@@ -1,5 +1,6 @@
 import React from "react"
 import Logo from './headerLogo.png'
+import {Link} from "react-router-dom";
 
 const LAST_UPDATED = "December 2023"
 class Footer extends React.Component {
@@ -18,11 +19,15 @@ class Footer extends React.Component {
         }
 
         const foottext = {
+            color: 'black',
+            textDecoration: 'none',
             marginBottom: '15px',
             marginTop: '3px'
         }
 
         const footheader = {
+            color: 'black',
+            textDecoration: 'none',
             fontSize: '20px',
             marginBottom: '15px',
             marginTop: '0px',
@@ -83,21 +88,31 @@ class Footer extends React.Component {
                         <p style={foottext}>
                             voronovy@umich.edu
                         </p>
+                        <a href="https://github.com/Markian00">
+                            <p style={foottext}>
+                                My Github
+                            </p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/markian-voronovych-1b930322b">
+                            <p style={foottext}>
+                                My LinkedIn
+                            </p>
+                        </a>
 
                     </div>
                     <div style={textcol}>
                         <p style={footheader}>
-                            words words words
+                            Learn More:
                         </p>
-                        <p style={foottext}>
-                            words words words
-                        </p>
-                        <p style={foottext}>
-                            words words words
-                        </p>
-                        <p style={foottext}>
-                            words words words
-                        </p>
+                        <Link style={foottext} to="/Projects">
+                            My Projects
+                        </Link>
+                        <Link style={foottext} to="/Academics">
+                            My Education
+                        </Link>
+                        <Link style={foottext} to="/Resume">
+                            My Online Resume
+                        </Link>
 
                     </div>
                     <div style={textcol}>

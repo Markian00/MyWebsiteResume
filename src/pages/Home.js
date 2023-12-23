@@ -337,7 +337,7 @@ const Home = () => {
                         GitHub
                     </button>
                 </a>
-                <a href="https://github.com/Markian00" style={centered}>
+                <a href="www.linkedin.com/in/markian-voronovych-1b930322b" style={centered}>
                     <button style={button_paragraph_center}>
                         LinkedIn
                     </button>
