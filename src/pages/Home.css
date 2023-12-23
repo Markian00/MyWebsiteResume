@@ -1,0 +1,33 @@
+@keyframes comeIn {
+    0% {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+.fade{
+    animation: comeIn 5s;
+}
+
+.box{
+    font-size: 22px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-style: solid;
+    outline: none;
+    margin-right: 20%;
+    width: 60%;
+    margin-left: 20%;
+    height: 100px;
+    background: black;
+    color: black;
+    text-align: center;
+    border-radius: 13px;
+    padding: 5px;
+}
+
+
+.box:hover{
+    background: rgb(188, 161, 86);
+    color: black;
+    animation: comeIn 1s;
+
+}

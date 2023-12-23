@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./animations.css"
+import "./Home.css"
 
 import Cpp from "./icons/C++ Logo Inverted.png"
 import Java from "./icons/Java Logo Inverted.png"
@@ -44,59 +44,20 @@ const Home = () => {
         lineHeight: '40px'
     }
 
-    const button_paragraph_right = {
+    const button_paragraph = {
         textAlign: 'center',
-        maxWidth: '500px',
-        background: 'linear-gradient(90deg, rgba(72,84,169,1) 0%, rgba(61,76,154,1) 100%)',
-        fontSize: '23px',
+        background: '#EDC25E',
+        fontSize: '18px',
         padding: '40px',
-        borderRadius: '25px',
+        width: '100%',
         fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        marginLeft: '10px',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
         display: 'block',
-        color: '#ffffff',
-        lineHeight: '40px'
-    }
-
-    const button_paragraph_center = {
-        textAlign: 'center',
-        maxWidth: '500px',
-        background: 'linear-gradient(90deg, rgba(92,99,194,1) 0%, rgba(78,88,176,1) 100%)',
-        fontSize: '23px',
-        padding: '40px',
-        borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        marginRight: '10px',
-        marginLeft: '10px',
-        flexDirection: 'column',
-        flexBasis: '100%',
-        flex: '1',
-        display: 'block',
-        color: '#ffffff',
-        lineHeight: '40px'
-    }
-
-    const button_paragraph_left = {
-        textAlign: 'center',
-        maxWidth: '500px',
-        background: 'linear-gradient(90deg, rgba(106,110,212,1) 0%, rgba(96,102,199,1) 100%)',
-        fontSize: '23px',
-        padding: '40px',
-        borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        marginRight: '10px',
-        flexDirection: 'column',
-        flexBasis: '100%',
-        flex: '1',
-        display: 'block',
-        color: '#ffffff',
-        lineHeight: '40px'
+        color: 'black',
+        lineHeight: '40px',
+        boxSizing: 'borderBox'
     }
 
     const bubble_standard = {
@@ -150,13 +111,19 @@ const Home = () => {
         marginLeft: '25%'
     }
 
+    const icon = {
+        marginRight: '25%',
+        marginLeft:'25%',
+        textAlign: 'center'
+    }
+
     const divsplit = {
         background: 'black',
         flex: '1',
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         width: "100%"
     }
     const divsplitlist = {
@@ -204,6 +171,12 @@ const Home = () => {
         textAlign: 'center'
     }
 
+    const close = {
+        marginBottom: '0px',
+        marginTop: '0px',
+        fontWeight: 'bold'
+    }
+
     const logo = {
         marginTop: "70px",
         width: '35%'
@@ -234,36 +207,74 @@ const Home = () => {
 
             <div style={divsplit}>
                 <div style={imagecol} className="fade">
-                    <img src={Cpp} alt="C++ Logo" style={fill}/>
-                    <p> C++ </p>
+                    <img src={Cpp} alt="C++ Logo" style={icon}/>
+                    <div className='box'>
+                        <p style={close}>
+                            C++ Tools:
+                        </p>
+                        <p>
+                            Qt Creator
+                        </p>
+                    </div>
                 </div>
 
                 <div style={imagecol} className="fade">
-                    <img src={Java} alt="Java Logo" style={fill}/>
-                    <p> Java </p>
+                    <img src={Java} alt="Java Logo" style={icon}/>
+                    <div className='box'>
+                        <p style={close}>
+                            Java Tools:
+                        </p>
+                        <p>
+                            Swing UI
+                        </p>
+                    </div>
                 </div>
 
                 <div style={imagecol} className="fade">
-                    <img src={Python} alt="Python Logo" style={fill}/>
-                    <p> Python </p>
+                    <img src={Python} alt="Python Logo" style={icon}/>
+                    <div className='box'>
+                        <p style={close}>
+                            Python Tools:
+                        </p>
+                        <p>
+                            Pandas, PyGame
+                        </p>
+                    </div>
                 </div>
 
             </div>
 
             <div style={divsplit}>
                 <div style={imagecol} className="fade">
-                    <img src={JavaScript} alt="JavaScript Logo" style={fill}/>
-                    <p> JavaScript </p>
+                    <img src={JavaScript} alt="JavaScript Logo" style={icon}/>
+                    <div className='box'>
+                    <p style={close}>
+                            JavaScript Tools:
+                        </p>
+                        <p>
+                            Node.JS, React
+                        </p>
+                    </div>
+
                 </div>
 
                 <div style={imagecol} className="fade">
-                    <img src={CSS} alt="CSS Logo" style={fill}/>
-                    <p> CSS </p>
+                    <img src={CSS} alt="CSS Logo" style={icon}/>
+                    <div className='box'>
+                        <pre style={close}>
+                            {"\nCSS"}
+                        </pre>
+                    </div>
                 </div>
 
                 <div style={imagecol} className="fade">
-                    <img src={HTML} alt="HTML Logo" style={fill}/>
-                    <p> HTML </p>
+
+                    <img src={HTML} alt="HTML Logo" style={icon}/>
+                    <div className='box'>
+                        <pre style={close}>
+                            {"\nHTML"}
+                        </pre>
+                    </div>
                 </div>
 
             </div>
@@ -327,27 +338,24 @@ const Home = () => {
 
             <div style={seperator}></div>
 
-            <div style={back}>
-                <img className="fade" src={placeholder} alt="Markian's Face" style={fill}/>
-            </div>
-
-            <div style={divsplit}>
+            <div style={divsplitlist}>
                 <a href="https://github.com/Markian00" style={centered}>
-                    <button style={button_paragraph_left}>
+                    <button style={button_paragraph}>
                         GitHub
                     </button>
                 </a>
                 <a href="www.linkedin.com/in/markian-voronovych-1b930322b" style={centered}>
-                    <button style={button_paragraph_center}>
+                    <button style={button_paragraph}>
                         LinkedIn
                     </button>
                 </a>
                 <a href="https://app.joinhandshake.com/stu/users/45887067" style={centered}>
-                    <button style={button_paragraph_right}>
+                    <button style={button_paragraph}>
                         HandShake
                     </button>
                 </a>
             </div>
+            <img className="fade" src={placeholder} alt="Markian's Face" style={fill}/>
 
 
         </>
