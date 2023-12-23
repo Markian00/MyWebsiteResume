@@ -6,22 +6,28 @@ import {
     Route,
 } from "react-router-dom";
 import Projects from "./pages/Projects"
-import About from "./pages/About";
+import Academics from "./pages/Academics";
 import Resume from "./pages/Resume.js"
 import NavB from "./components/NavB"
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 
 function App() {
-    return (
 
+    return (
+        <>
         <Router>
             <NavB/>
             <Routes>
-                <Route path="/About" element={<About/>}/>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/Academics" element={<Academics/>}/>
                 <Route path="/Resume" element={<Resume/>}/>
                 <Route path="/Projects" element={<Projects/>}/>
             </Routes>
+            <Footer/>
         </Router>
+        </>
 
 
         /*

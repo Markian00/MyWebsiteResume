@@ -26,11 +26,14 @@ class NavB extends React.Component{
 
                     <NavMenu style={textsize}>
                         <img src={logo} alt="Markian Voronovych Logo" width="70px" style={padded}/>
+                        <NavLink to="/">
+                            Home
+                        </NavLink>
                         <NavLink to="/Resume">
                             Resume
                         </NavLink>
-                        <NavLink to="/About">
-                            About Me
+                        <NavLink to="/Academics">
+                            Academics
                         </NavLink>
                         <NavLink to="/Projects">
                             Projects
