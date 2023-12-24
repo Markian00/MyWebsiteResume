@@ -39,7 +39,7 @@ const margin_right = {
 }
 
 const projheader = {
-    
+
 }
 
 const centered = {

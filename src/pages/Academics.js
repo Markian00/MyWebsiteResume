@@ -9,8 +9,9 @@ const homeheading = {
     margin: 'auto',
     padding: '0px',
     textAlign: 'center',
-    fontFamily: 'sans-serif',
-    fontSize: '50px',
+    fontFamily: 'Andale Mono, monospace',
+    fontWeight: 'bold',
+    fontSize: '57px',
     marginTop: '50px',
     color: '#d0b36d'
 }
