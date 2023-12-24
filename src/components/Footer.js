@@ -7,7 +7,7 @@ class Footer extends React.Component {
     render(){
 
         const foot = {
-            background: '#EDC25E',
+            background: '#d0b36d',
             fontSize: '15px',
             width: '100%',
             //borderRadius: '25px',
@@ -36,7 +36,7 @@ class Footer extends React.Component {
 
         const divsplit = {
             padding: '20px',
-            background: '#EDC25E',
+            background: '#d0b36d',
             flex: '1',
             display: 'flex',
             flexDirection: 'row',
@@ -45,7 +45,7 @@ class Footer extends React.Component {
         }
 
         const imagecol = {
-            background: '#EDC25E',
+            background: 'd0b36d',
             marginRight: '5%',
             marginLeft: '5%',
             width: '10%',
@@ -56,7 +56,7 @@ class Footer extends React.Component {
         }
 
         const textcol = {
-            background: '#EDC25E',
+            background: '#d0b36d',
             width: '22%',
             flexDirection: 'column',
             display: 'flex',
@@ -117,16 +117,16 @@ class Footer extends React.Component {
                     </div>
                     <div style={textcol}>
                         <p style={footheader}>
-                            words words words
+                            Website Information:
                         </p>
                         <p style={foottext}>
-                            words words words
+                            Run On AWS
                         </p>
                         <p style={foottext}>
-                            words words words
+                            PDFs Stored in S3 containers
                         </p>
                         <p style={foottext}>
-                            words words words
+                            Built With ReactJS and Node.js
                         </p>
 
                     </div>

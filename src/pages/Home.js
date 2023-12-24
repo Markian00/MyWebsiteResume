@@ -1,6 +1,6 @@
 import React from "react"
 
-import "./animations.css"
+import "./Home.css"
 
 import Cpp from "./icons/C++ Logo Inverted.png"
 import Java from "./icons/Java Logo Inverted.png"
@@ -8,10 +8,17 @@ import Python from "./icons/Python Logo Inverted.png"
 import JavaScript from "./icons/JavaScript Logo Inverted.png"
 import CSS from "./icons/Css Logo Inverted.png"
 import HTML from "./icons/HTML Logo Inverted.png"
-import GoldLogo from "./icons/MyLogoGold.png"
+import cloudIcon from "./icons/inverted Server Icon.png"
+import designIcon from "./icons/Design Icon Inverted.png"
 import GoldCircle from "./icons/GoldLogoCircle.png"
+import selfImage from "./icons/MeBlackAndWhite.jpg"
+
+import GitHub from "./icons/GitHub Icon Inverted.png"
+import LinkedIn from "./icons/LinkedIn Icon Inverted.png"
+import Handshake from "./icons/Handshake Icon Inverted.png"
 
 import placeholder from "./placeholder.png"
+import languageIcon from "./icons/Languages Icon Inverted.png";
 
 const Home = () => {
 
@@ -21,9 +28,11 @@ const Home = () => {
         marginTop: '0px',
         padding: '30px',
         textAlign: 'center',
-        fontFamily: 'sans-serif',
-        fontSize: '30px',
-        color: "#EDC25E",
+        fontFamily: 'Andale Mono, monospace',
+        fontSize: '40px',
+        fontWeight: 'bold',
+        marginBottom: '60px',
+        color: "white",
     }
 
     const bubble_paragraph = {
@@ -32,7 +41,7 @@ const Home = () => {
         fontSize: '23px',
         width: '50%',
         //borderRadius: '25px',
-        fontFamily: 'sans-serif',
+        fontFamily: 'Andale Mono, monospace',
         marginBottom: '0px',
         marginLeft: '0px',
         marginRight: '0px',
@@ -44,59 +53,45 @@ const Home = () => {
         lineHeight: '40px'
     }
 
-    const button_paragraph_right = {
-        textAlign: 'center',
-        maxWidth: '500px',
-        background: 'linear-gradient(90deg, rgba(72,84,169,1) 0%, rgba(61,76,154,1) 100%)',
-        fontSize: '23px',
-        padding: '40px',
+    const button_paragraph = {
         borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        marginLeft: '10px',
+        textAlign: 'center',
+        fontSize: '30px',
+        marginLeft: '30%',
+        marginRight: '30%',
+        width: '40%',
+        fontFamily: 'Andale Mono, monospace',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
         display: 'block',
-        color: '#ffffff',
-        lineHeight: '40px'
+        color: 'black',
+        lineHeight: '40px',
+        boxSizing: 'borderBox',
+        borderStyle: 'solid',
+        outline: 'none',
     }
 
-    const button_paragraph_center = {
+    const cloud_paragraph = {
         textAlign: 'center',
-        maxWidth: '500px',
-        background: 'linear-gradient(90deg, rgba(92,99,194,1) 0%, rgba(78,88,176,1) 100%)',
-        fontSize: '23px',
-        padding: '40px',
-        borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        marginRight: '10px',
-        marginLeft: '10px',
+        background: '#d0b36d',
+        fontSize: '30px',
+        padding: '5%',
+        width: '60%',
+        fontFamily: 'Andale Mono, monospace',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
         display: 'block',
-        color: '#ffffff',
-        lineHeight: '40px'
-    }
+        color: 'black',
+        lineHeight: '60px',
+        boxSizing: 'borderBox',
+        borderRadius: '15px',
+        marginBottom: '100px',
+        marginTop: '100px',
+        marginLeft: '4%',
+        marginRight: '4%',
 
-    const button_paragraph_left = {
-        textAlign: 'center',
-        maxWidth: '500px',
-        background: 'linear-gradient(90deg, rgba(106,110,212,1) 0%, rgba(96,102,199,1) 100%)',
-        fontSize: '23px',
-        padding: '40px',
-        borderRadius: '25px',
-        fontFamily: 'sans-serif',
-        marginBottom: '20px',
-        marginRight: '10px',
-        flexDirection: 'column',
-        flexBasis: '100%',
-        flex: '1',
-        display: 'block',
-        color: '#ffffff',
-        lineHeight: '40px'
     }
 
     const bubble_standard = {
@@ -104,7 +99,7 @@ const Home = () => {
         fontSize: '23px',
         padding: '30px',
         //borderRadius: '25px',
-        fontFamily: 'sans-serif',
+        fontFamily: 'Andale Mono, monospace',
         marginBottom: '0px',
         marginRight: '100px',
         marginLeft: '100px',
@@ -130,8 +125,7 @@ const Home = () => {
         width: '100%',
         //borderRadius: '25px',
         marginTop: '-5px',
-        marginBottom: '-30px',
-        fontFamily: 'sans-serif',
+        marginBottom: '-20px',
         flexBasis: '100%',
         flex: '1',
         display: 'flex',
@@ -145,9 +139,16 @@ const Home = () => {
     }
 
     const fill = {
-        width: '50%',
+        width: '80%',
+        marginRight: '10%',
+        marginLeft: '10%',
+        maxWidth: '10000px'
+    }
+
+    const icon = {
         marginRight: '25%',
-        marginLeft: '25%'
+        marginLeft:'25%',
+        textAlign: 'center'
     }
 
     const divsplit = {
@@ -156,7 +157,7 @@ const Home = () => {
         display: 'flex',
         flexDirection: 'row',
         flexWrap: 'wrap',
-        alignItems: 'flex-start',
+        alignItems: 'center',
         width: "100%"
     }
     const divsplitlist = {
@@ -178,18 +179,32 @@ const Home = () => {
     const seperator = {
         background: '#9A7623',
         width: "100%",
-        height: "20px",
-        marginTop: "20px",
-        marginBottom: "20px"
+        height: "10px",
+        marginTop: "0px",
+        marginBottom: "0px",
+        color: '#9A7623'
 
     }
 
     const dash = {
-        background: '#9A7623',
-        width: "35%",
-        height: "5px",
-        margin: "auto",
-        color: '#9A7623'
+        background: 'white',
+        width: "84%",
+        height: "3px",
+        marginLeft: "7%",
+        marginBottom: '30px',
+        color: 'white'
+    }
+
+    const blackdash = {
+        background: 'black',
+        width: "84%",
+        height: "6px",
+        outline: 'none',
+        borderStyle: 'solid',
+        borderColor: 'black',
+        marginLeft: "7%",
+        marginBottom: '30px',
+        color: 'black'
     }
 
     const imagecol = {
@@ -204,10 +219,63 @@ const Home = () => {
         textAlign: 'center'
     }
 
+    const close = {
+        marginBottom: '0px',
+        marginTop: '0px',
+        fontWeight: 'bold'
+    }
+
     const logo = {
         marginTop: "70px",
         width: '35%'
     }
+
+    const cloud = {
+        width: '22%',
+        marginTop: '80px',
+        marginBottom: '100px',
+        marginLeft: '3%',
+        marginRight: '3%'
+
+    }
+
+    const namebubble ={
+        width: '30%',
+        marginLeft: '10%',
+        background: 'black',
+        color: 'white',
+        fontSize: '70px',
+        fontFamily: 'Andale Mono, monospace',
+        fontWeight: 'bold',
+        marginBottom: '0px',
+        marginTop: '60px',
+        lineHeight: '55px'
+    }
+
+    const careerbubble ={
+
+        width: '30%',
+        marginLeft: '10%',
+        background: 'black',
+        color: 'white',
+        fontSize: '35px',
+        fontFamily: 'Courier New, monospace',
+        marginTop: '5px'
+    }
+
+    const annotation = {
+        width: '20%',
+        textAlign: 'center',
+        marginLeft: '40%',
+        marginRight: '40%',
+        background: 'black',
+        color: 'white',
+        fontSize: '16px',
+        fontFamily: 'Courier New, monospace',
+        marginTop: '0px'
+    }
+
+    window.scrollTo(0,0)
 
     return (
         <>
@@ -227,129 +295,182 @@ const Home = () => {
                 </div>
             </div>
             <div style={seperator}></div>
-
-            <h1 style={homeheading}>
-                Markian's Skills
-            </h1>
-
-            <div style={divsplit}>
-                <div style={imagecol} className="fade">
-                    <img src={Cpp} alt="C++ Logo" style={fill}/>
-                    <p> C++ </p>
-                </div>
-
-                <div style={imagecol} className="fade">
-                    <img src={Java} alt="Java Logo" style={fill}/>
-                    <p> Java </p>
-                </div>
-
-                <div style={imagecol} className="fade">
-                    <img src={Python} alt="Python Logo" style={fill}/>
-                    <p> Python </p>
-                </div>
-
-            </div>
-
-            <div style={divsplit}>
-                <div style={imagecol} className="fade">
-                    <img src={JavaScript} alt="JavaScript Logo" style={fill}/>
-                    <p> JavaScript </p>
-                </div>
-
-                <div style={imagecol} className="fade">
-                    <img src={CSS} alt="CSS Logo" style={fill}/>
-                    <p> CSS </p>
-                </div>
-
-                <div style={imagecol} className="fade">
-                    <img src={HTML} alt="HTML Logo" style={fill}/>
-                    <p> HTML </p>
-                </div>
-
-            </div>
-
             <div style={seperator}></div>
+
+            <div className="fade">
+                <p style={namebubble}> Markian Voronovych </p>
+                <p style={careerbubble}> Software Engineer </p>
+                <hr style={dash}/>
+                <img src={selfImage} alt="Markian Voronovych" style={fill}/>
+                <hr style={dash}/>
+
+                <div style={divsplit}>
+                    <div style={imagecol}>
+                        <a href="https://github.com/Markian00" style={centered}>
+                            <button style={button_paragraph} className='btn'>
+
+                                <img src={GitHub} alt='github' style={fill}/>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div style={imagecol}>
+                        <a href="https://www.linkedin.com/in/markian-voronovych-1b930322b" style={centered}>
+                            <button className='btn' style={button_paragraph}>
+
+                                <img src={LinkedIn} alt='github' style={fill}/>
+                            </button>
+                        </a>
+                    </div>
+                    <div style={imagecol}>
+                        <a href="https://app.joinhandshake.com/stu/users/45887067" style={centered}>
+                            <button className='btn' style={button_paragraph}>
+
+                                <img src={Handshake} alt='github' style={fill}/>
+                            </button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+                <hr style={dash}/>
+
+            </div>
+
+
+            <div style={homeheading}>
+                Markian's Skills
+                <p style={annotation}>
+                    Hover under the icons to see applicable frameworks
+                </p>
+            </div>
+
 
             <div style={divsplitlist}>
-
-                <div style={bubble_paragraph}>
-                    <h4 style={smallheight} className="fade">
-                        Frameworks
-                    </h4>
-                    <hr style={dash} className="fade"/>
-                    <p style={smallheight} className="fade">
-                        ReactJS
-                    </p>
-                    <p style={smallheight} className="fade">
-                        PyGame
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Qt GUI
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Swing GUI
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Node.js
-                    </p>
-
-                    <p></p>
+                <div style={imagecol} className="fade">
+                <img src={Cpp} alt="C++ Logo" style={icon}/>
+                    <div className='box'>
+                        <p style={close}>
+                            C++ Tools:
+                        </p>
+                        <p>
+                            Qt Creator
+                        </p>
+                    </div>
                 </div>
 
-                <div className="fade">
-                    <img src={GoldCircle} alt="Website Logo" style={logo}/>
+                <div style={imagecol} className="fade">
+                    <img src={Java} alt="Java Logo" style={icon}/>
+                    <div className='box'>
+                    <p style={close}>
+                            Java Tools:
+                        </p>
+                        <p>
+                            Swing UI
+                        </p>
+                    </div>
                 </div>
 
-                <div style={bubble_paragraph}>
-                    <h4 style={smallheight} className="fade">
-                        Personal Interests
-                    </h4>
-                    <hr style={dash} className="fade"/>
-                    <p style={smallheight} className="fade">
-                        Discrete Math
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Finance
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Body Building
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Gaming
-                    </p>
-                    <p style={smallheight} className="fade">
-                        Golf
-                    </p>
-
-                    <p></p>
+                <div style={imagecol} className="fade">
+                    <img src={Python} alt="Python Logo" style={icon}/>
+                    <div className='box'>
+                        <p style={close}>
+                            Python Tools:
+                        </p>
+                        <p>
+                            Pandas, PyGame
+                        </p>
+                    </div>
                 </div>
+
             </div>
 
-            <div style={seperator}></div>
+            <div style={divsplitlist}>
+                <div style={imagecol} className="fade">
+                    <img src={JavaScript} alt="JavaScript Logo" style={icon}/>
+                    <div className='box'>
+                        <p style={close}>
+                            JavaScript Tools:
+                        </p>
+                        <p>
+                            Node.JS, React
+                        </p>
+                    </div>
 
-            <div style={back}>
-                <img className="fade" src={placeholder} alt="Markian's Face" style={fill}/>
+                </div>
+
+                <div style={imagecol} className="fade">
+                    <img src={CSS} alt="CSS Logo" style={icon}/>
+                    <div className='box'>
+                        <pre style={close}>
+                            {"\nCSS"}
+                        </pre>
+                    </div>
+                </div>
+
+                <div style={imagecol} className="fade">
+
+                    <img src={HTML} alt="HTML Logo" style={icon}/>
+                    <div className='box'>
+                        <pre style={close}>
+                            {"\nHTML"}
+                        </pre>
+                    </div>
+                </div>
+
             </div>
+
+            <hr style={dash}/>
 
             <div style={divsplit}>
-                <a href="https://github.com/Markian00" style={centered}>
-                    <button style={button_paragraph_left}>
-                        GitHub
-                    </button>
-                </a>
-                <a href="www.linkedin.com/in/markian-voronovych-1b930322b" style={centered}>
-                    <button style={button_paragraph_center}>
-                        LinkedIn
-                    </button>
-                </a>
-                <a href="https://app.joinhandshake.com/stu/users/45887067" style={centered}>
-                    <button style={button_paragraph_right}>
-                        HandShake
-                    </button>
-                </a>
+                <img src={cloudIcon} style={cloud} alt="Clip Art Server"/>
+                <div style={cloud_paragraph}>
+                    <h1 style={centered}>
+                        Databases and The Cloud
+                    </h1>
+                    <hr style={blackdash}/>
+                    <p>
+                        Experience with AWS, Firebase and other Google Cloud Tools. In the process of learning SQL and
+                        Vertex AI for upcoming projects.
+                    </p>
+                </div>
             </div>
 
+            <hr style={dash}/>
 
+            <div style={divsplit}>
+
+                <div style={cloud_paragraph}>
+                    <h1 style={centered}>
+                        Design and Architecture
+                    </h1>
+                    <hr style={blackdash}/>
+                    <p>
+                        Lots of experience with building software in groups. Familiar with Solid Clean Architecture
+                        Principles, Agile Methodology Software Development, and proper practice in several languages.
+                    </p>
+                </div>
+                <img src={designIcon} style={cloud} alt="Clip Art Gears"/>
+            </div>
+
+            <hr style={dash}/>
+
+            <div style={divsplit}>
+                <img src={languageIcon} style={cloud} alt="Clip Art Text Bubble"/>
+                <div style={cloud_paragraph}>
+                    <h1 style={centered}>
+                        Languages
+                    </h1>
+                    <hr style={blackdash}/>
+                    <p>
+                        I fluently speak English and have lots of experience with code documentation, essays and
+                        presentations. I speak Ukrainian and Russian conversationally with good reading comprehension
+                        and decent writing abilities.
+                    </p>
+                </div>
+            </div>
         </>
     );
 };

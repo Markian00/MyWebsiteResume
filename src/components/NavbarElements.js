@@ -12,8 +12,9 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
+    font-size: 1.35vw;
     color: #000101;
-    margin-right: 20px;
+    margin-right: 1.2vw;
     display: flex;
     align-items: center;
     text-decoration: none;
