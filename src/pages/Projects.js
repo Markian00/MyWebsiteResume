@@ -2,12 +2,12 @@ import React from "react"
 
 const margin_left = {
 
-    background: '#9e7db1',
+    background: '#d0b36d',
     fontSize: '23px',
     borderRadius: '25px',
     fontFamily: 'sans-serif',
     width: '50%',
-    marginTop: '20px',
+    marginTop: '60px',
     marginRight: '100px',
     marginLeft: '50px',
     flexDirection: 'column',
@@ -15,18 +15,18 @@ const margin_left = {
     flex: '1',
     display: 'flex',
     padding: '30px',
-    color: '#ffffff',
+    color: 'black',
     lineHeight: '40px'
 }
 
 const margin_right = {
 
-    background: '#9e7db1',
+    background: '#d0b36d',
     fontSize: '23px',
     borderRadius: '25px',
     fontFamily: 'sans-serif',
     width: '50%',
-    marginTop: '20px',
+    marginTop: '60px',
     marginRight: '50px',
     marginLeft: '100px',
     flexDirection: 'column',
@@ -34,8 +34,12 @@ const margin_right = {
     flex: '1',
     display: 'flex',
     padding: '30px',
-    color: '#ffffff',
+    color: 'black',
     lineHeight: '40px'
+}
+
+const projheader = {
+    
 }
 
 const centered = {

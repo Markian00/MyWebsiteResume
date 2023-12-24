@@ -7,6 +7,7 @@ const pdf = {
     border: "1px solid black"
 }
 const Resume = () => {
+    window.scrollTo(0,0)
     const pdfURL = 'https://markianresume2024-553360963633.s3-accesspoint.us-east-2.amazonaws.com/Markian_Voronovych_Resume_2024.pdf';
 
     return (
