@@ -117,16 +117,16 @@ class Footer extends React.Component {
                     </div>
                     <div style={textcol}>
                         <p style={footheader}>
-                            words words words
+                            Website Information:
                         </p>
                         <p style={foottext}>
-                            words words words
+                            Run On AWS
                         </p>
                         <p style={foottext}>
-                            words words words
+                            PDFs Stored in S3 containers
                         </p>
                         <p style={foottext}>
-                            words words words
+                            Built With ReactJS and Node.js
                         </p>
 
                     </div>

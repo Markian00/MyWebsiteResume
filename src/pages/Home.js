@@ -275,6 +275,8 @@ const Home = () => {
         marginTop: '0px'
     }
 
+    window.scrollTo(0,0)
+
     return (
         <>
 
