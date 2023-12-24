@@ -11,11 +11,11 @@ const sticky = {
     padding: '16px'
 }
 const padded = {
-    padding: '40px'
+    padding: '2.5vw'
 }
 
 const textsize = {
-    fontSize: "22px"
+    fontSize: "1.5vw"
 }
 class NavB extends React.Component{
     render(){

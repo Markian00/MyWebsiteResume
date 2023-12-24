@@ -7,7 +7,7 @@ class Footer extends React.Component {
     render(){
 
         const foot = {
-            background: '#EDC25E',
+            background: '#d0b36d',
             fontSize: '15px',
             width: '100%',
             //borderRadius: '25px',
@@ -36,7 +36,7 @@ class Footer extends React.Component {
 
         const divsplit = {
             padding: '20px',
-            background: '#EDC25E',
+            background: '#d0b36d',
             flex: '1',
             display: 'flex',
             flexDirection: 'row',
@@ -45,7 +45,7 @@ class Footer extends React.Component {
         }
 
         const imagecol = {
-            background: '#EDC25E',
+            background: 'd0b36d',
             marginRight: '5%',
             marginLeft: '5%',
             width: '10%',
@@ -56,7 +56,7 @@ class Footer extends React.Component {
         }
 
         const textcol = {
-            background: '#EDC25E',
+            background: '#d0b36d',
             width: '22%',
             flexDirection: 'column',
             display: 'flex',
