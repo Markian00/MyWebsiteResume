@@ -29,34 +29,34 @@ const Home = () => {
         padding: '30px',
         textAlign: 'center',
         fontFamily: 'Andale Mono, monospace',
-        fontSize: '40px',
+        fontSize: '2.5vw',
         fontWeight: 'bold',
-        marginBottom: '60px',
+        marginBottom: '3.4vw',
         color: "white",
     }
 
     const bubble_paragraph = {
 
         //background: 'white',
-        fontSize: '23px',
+        fontSize: '1vw',
         width: '50%',
         //borderRadius: '25px',
         fontFamily: 'Andale Mono, monospace',
         marginBottom: '0px',
-        marginLeft: '0px',
-        marginRight: '0px',
+        marginLeft: '0%',
+        marginRight: '0%',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
         display: 'flex',
         color: 'white',
-        lineHeight: '40px'
+        lineHeight: '2.4vw'
     }
 
     const button_paragraph = {
-        borderRadius: '25px',
+        borderRadius: '1.2vw',
         textAlign: 'center',
-        fontSize: '30px',
+        fontSize: '2vw',
         marginLeft: '30%',
         marginRight: '30%',
         width: '40%',
@@ -66,7 +66,7 @@ const Home = () => {
         flex: '1',
         display: 'block',
         color: 'black',
-        lineHeight: '40px',
+        lineHeight: '2.4vw',
         boxSizing: 'borderBox',
         borderStyle: 'solid',
         outline: 'none',
@@ -75,7 +75,7 @@ const Home = () => {
     const cloud_paragraph = {
         textAlign: 'center',
         background: '#d0b36d',
-        fontSize: '30px',
+        fontSize: '2vw',
         padding: '5%',
         width: '60%',
         fontFamily: 'Andale Mono, monospace',
@@ -84,9 +84,9 @@ const Home = () => {
         flex: '1',
         display: 'block',
         color: 'black',
-        lineHeight: '60px',
+        lineHeight: '4vw',
         boxSizing: 'borderBox',
-        borderRadius: '15px',
+        borderRadius: '1vw',
         marginBottom: '100px',
         marginTop: '100px',
         marginLeft: '4%',
@@ -96,8 +96,8 @@ const Home = () => {
 
     const bubble_standard = {
         textAlign: 'center',
-        fontSize: '23px',
-        padding: '30px',
+        fontSize: '1.4vw',
+        padding: '2vw',
         //borderRadius: '25px',
         fontFamily: 'Andale Mono, monospace',
         marginBottom: '0px',
@@ -108,11 +108,11 @@ const Home = () => {
         flex: '1',
         display: 'flex',
         color: 'black',
-        lineHeight: '40px'
+        lineHeight: '2.4vw'
     }
 
     const smallheight = {
-        fontSize: '27px',
+        fontSize: '2vw',
         margin: 'auto',
         marginTop: '10px',
         marginBottom: '10px'
@@ -121,16 +121,16 @@ const Home = () => {
     const welcome = {
 
         background: '#EDC25E',
-        fontSize: '23px',
+        fontSize: '1.7vw',
         width: '100%',
         //borderRadius: '25px',
         marginTop: '-5px',
-        marginBottom: '-20px',
+        marginBottom: '0px',
         flexBasis: '100%',
         flex: '1',
         display: 'flex',
         color: 'black',
-        lineHeight: '40px'
+        lineHeight: '2.4vw'
     }
 
     const centered = {
@@ -146,6 +146,7 @@ const Home = () => {
     }
 
     const icon = {
+        width: '50%',
         marginRight: '25%',
         marginLeft:'25%',
         textAlign: 'center'
@@ -222,7 +223,8 @@ const Home = () => {
     const close = {
         marginBottom: '0px',
         marginTop: '0px',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontSize: '1.3vw'
     }
 
     const logo = {
@@ -244,12 +246,12 @@ const Home = () => {
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: '70px',
+        fontSize: '4vw',
         fontFamily: 'Andale Mono, monospace',
         fontWeight: 'bold',
         marginBottom: '0px',
         marginTop: '60px',
-        lineHeight: '55px'
+        lineHeight: '3.6vw'
     }
 
     const careerbubble ={
@@ -258,7 +260,7 @@ const Home = () => {
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: '35px',
+        fontSize: '2.2vw',
         fontFamily: 'Courier New, monospace',
         marginTop: '5px'
     }
@@ -270,9 +272,13 @@ const Home = () => {
         marginRight: '40%',
         background: 'black',
         color: 'white',
-        fontSize: '16px',
+        fontSize: '1.1vw',
         fontFamily: 'Courier New, monospace',
         marginTop: '0px'
+    }
+
+    const scale = {
+        fontSize: '1.3vw'
     }
 
     window.scrollTo(0,0)
@@ -355,7 +361,7 @@ const Home = () => {
                         <p style={close}>
                             C++ Tools:
                         </p>
-                        <p>
+                        <p style={scale}>
                             Qt Creator
                         </p>
                     </div>
@@ -367,7 +373,7 @@ const Home = () => {
                     <p style={close}>
                             Java Tools:
                         </p>
-                        <p>
+                        <p style={scale}>
                             Swing UI
                         </p>
                     </div>
@@ -379,7 +385,7 @@ const Home = () => {
                         <p style={close}>
                             Python Tools:
                         </p>
-                        <p>
+                        <p style={scale}>
                             Pandas, PyGame
                         </p>
                     </div>
@@ -394,7 +400,7 @@ const Home = () => {
                         <p style={close}>
                             JavaScript Tools:
                         </p>
-                        <p>
+                        <p style={scale}>
                             Node.JS, React
                         </p>
                     </div>
