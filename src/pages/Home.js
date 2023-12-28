@@ -29,7 +29,7 @@ const Home = () => {
         padding: '30px',
         textAlign: 'center',
         fontFamily: 'Andale Mono, monospace',
-        fontSize: '2.5vw',
+        fontSize: 'calc(15px + 1.5vw)',
         fontWeight: 'bold',
         marginBottom: '3.4vw',
         color: "white",
@@ -87,8 +87,8 @@ const Home = () => {
         lineHeight: '4vw',
         boxSizing: 'borderBox',
         borderRadius: '1vw',
-        marginBottom: '100px',
-        marginTop: '100px',
+        marginBottom: '7vw',
+        marginTop: '7vw',
         marginLeft: '4%',
         marginRight: '4%',
 
@@ -96,7 +96,7 @@ const Home = () => {
 
     const bubble_standard = {
         textAlign: 'center',
-        fontSize: '1.4vw',
+        fontSize: 'calc(7px + 1vw)',
         padding: '2vw',
         //borderRadius: '25px',
         fontFamily: 'Andale Mono, monospace',
@@ -224,7 +224,7 @@ const Home = () => {
         marginBottom: '0px',
         marginTop: '0px',
         fontWeight: 'bold',
-        fontSize: '1.3vw'
+        fontSize: 'calc(8px + 0.7vw)'
     }
 
     const logo = {
@@ -246,12 +246,12 @@ const Home = () => {
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: '4vw',
+        fontSize: 'calc(15px + 3vw)',
         fontFamily: 'Andale Mono, monospace',
         fontWeight: 'bold',
         marginBottom: '0px',
         marginTop: '60px',
-        lineHeight: '3.6vw'
+        lineHeight: 'calc(15px + 2.6vw)'
     }
 
     const careerbubble ={
@@ -260,7 +260,7 @@ const Home = () => {
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: '2.2vw',
+        fontSize: 'calc(15px + 1.2vw)',
         fontFamily: 'Courier New, monospace',
         marginTop: '5px'
     }
@@ -272,13 +272,13 @@ const Home = () => {
         marginRight: '40%',
         background: 'black',
         color: 'white',
-        fontSize: '1.1vw',
+        fontSize: 'calc(5px + 0.8vw)',
         fontFamily: 'Courier New, monospace',
         marginTop: '0px'
     }
 
     const scale = {
-        fontSize: '1.3vw'
+        fontSize: 'calc(8px + 0.7vw)'
     }
 
     window.scrollTo(0,0)
@@ -288,15 +288,13 @@ const Home = () => {
 
             <div style={welcome}>
                 <div style={bubble_standard}>
-                    <h1 style={centered}> Welcome </h1>
+                    <h1 style={centered}> Welcome! </h1>
                     <p>
-                        Hello! Welcome to my website for employers, my name is <u>Markian Voronovych. </u>
-                        On this website you'll be able to easily locate <u>my resume, my projects</u>, and
-                        <u> anything else </u> you might want to know about me. If you are here, I have probably
-                        applied to work at your company. I believe I am a <u>self-starter</u>, a
-                        <u> hard worker</u>, and a <u>creative problem-solver</u>. I hope that your journey through
-                        my
-                        website brings you to the same conclusion.
+                       You’ve landed on the website of Markian Voronovych. If you are looking to find a good
+                        fit for your employment needs, you can look no further.
+                        I am a self-starter, a creative problem solver and a hard worker. I am passionate about
+                        programming and always looking to improve my self and my skills. Please enjoy your journey
+                        through these pages as you better understand how my skills and experiences match your current needs.
                     </p>
                 </div>
             </div>
@@ -454,8 +452,9 @@ const Home = () => {
                     </h1>
                     <hr style={blackdash}/>
                     <p>
-                        Lots of experience with building software in groups. Familiar with Solid Clean Architecture
-                        Principles, Agile Methodology Software Development, and proper practice in several languages.
+                        Lots of experience with building software in teams. Familiar with Solid Clean Architecture
+                        Principles, Agile Methodology Software Development, and proper programming practices in several
+                        languages.
                     </p>
                 </div>
                 <img src={designIcon} style={cloud} alt="Clip Art Gears"/>
