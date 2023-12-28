@@ -101,14 +101,14 @@ const Home = () => {
         //borderRadius: '25px',
         fontFamily: 'Andale Mono, monospace',
         marginBottom: '0px',
-        marginRight: '100px',
-        marginLeft: '100px',
+        marginRight: '6.5vw',
+        marginLeft: '6.5vw',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
         display: 'flex',
         color: 'black',
-        lineHeight: '2.4vw'
+        lineHeight: 'calc(10px + 1.8vw)'
     }
 
     const smallheight = {
