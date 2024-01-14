@@ -8,13 +8,13 @@ class Footer extends React.Component {
 
         const foot = {
             background: '#d0b36d',
-            fontSize: '1.1vw',
+            fontSize: 'calc(7px + 0.8vw)',
             width: '100%',
             //borderRadius: '25px',
             marginTop: '-5px',
             fontFamily: 'sans-serif',
             color: 'black',
-            lineHeight: '1.5vw',
+            lineHeight: 'calc(10px + 1.1vw)',
             height: '1.4vw'
         }
 
@@ -28,7 +28,7 @@ class Footer extends React.Component {
         const footheader = {
             color: 'black',
             textDecoration: 'none',
-            fontSize: '1.4vw',
+            fontSize: 'calc(10px + 1.1vw)',
             marginBottom: '15px',
             marginTop: '0px',
             fontWeight: 'bold'
@@ -123,10 +123,10 @@ class Footer extends React.Component {
                             Run On AWS
                         </p>
                         <p style={foottext}>
-                            PDFs Stored in S3 containers
+                            PDFs Stored in S3 buckets
                         </p>
                         <p style={foottext}>
-                            Built With ReactJS and Node.js
+                            Built With ReactJS and Bootstrap
                         </p>
 
                     </div>
