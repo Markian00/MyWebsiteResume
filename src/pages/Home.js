@@ -64,8 +64,8 @@ const Home = () => {
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
+        color: 'white',
         display: 'block',
-        color: 'black',
         lineHeight: '2.4vw',
         boxSizing: 'borderBox',
         borderStyle: 'solid',
@@ -135,7 +135,8 @@ const Home = () => {
 
     const centered = {
         margin: 'auto',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: 'calc(10px + 2.7vw)'
     }
 
     const fill = {
@@ -217,7 +218,8 @@ const Home = () => {
         flex: '1',
         display: 'flex',
         color:'white',
-        textAlign: 'center'
+        textAlign: 'center',
+        height: '10vw'
     }
 
     const close = {
@@ -301,7 +303,7 @@ const Home = () => {
             <div style={seperator}></div>
             <div style={seperator}></div>
 
-            <div className="fade">
+            <div>
                 <p style={namebubble}> Markian Voronovych </p>
                 <p style={careerbubble}> Software Engineer </p>
                 <hr style={dash}/>
@@ -310,7 +312,7 @@ const Home = () => {
 
                 <div style={divsplit}>
                     <div style={imagecol}>
-                        <a href="https://github.com/Markian00" style={centered}>
+                        <a href="https://github.com/Markian00">
                             <button style={button_paragraph} className='btn'>
 
                                 <img src={GitHub} alt='github' style={fill}/>
@@ -319,7 +321,7 @@ const Home = () => {
 
                     </div>
                     <div style={imagecol}>
-                        <a href="https://www.linkedin.com/in/markian-voronovych-1b930322b" style={centered}>
+                        <a href="https://www.linkedin.com/in/markian-voronovych-1b930322b">
                             <button className='btn' style={button_paragraph}>
 
                                 <img src={LinkedIn} alt='github' style={fill}/>
@@ -327,7 +329,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div style={imagecol}>
-                        <a href="https://app.joinhandshake.com/stu/users/45887067" style={centered}>
+                        <a href="https://app.joinhandshake.com/stu/users/45887067">
                             <button className='btn' style={button_paragraph}>
 
                                 <img src={Handshake} alt='github' style={fill}/>
@@ -353,7 +355,7 @@ const Home = () => {
 
 
             <div style={divsplitlist}>
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                 <img src={Cpp} alt="C++ Logo" style={icon}/>
                     <div className='box'>
                         <p style={close}>
@@ -365,7 +367,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={Java} alt="Java Logo" style={icon}/>
                     <div className='box'>
                     <p style={close}>
@@ -377,7 +379,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={Python} alt="Python Logo" style={icon}/>
                     <div className='box'>
                         <p style={close}>
@@ -392,7 +394,7 @@ const Home = () => {
             </div>
 
             <div style={divsplitlist}>
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={JavaScript} alt="JavaScript Logo" style={icon}/>
                     <div className='box'>
                         <p style={close}>
@@ -405,22 +407,22 @@ const Home = () => {
 
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={CSS} alt="CSS Logo" style={icon}/>
                     <div className='box'>
-                        <pre style={close}>
+                        <p style={close}>
                             {"\nCSS"}
-                        </pre>
+                        </p>
                     </div>
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
 
                     <img src={HTML} alt="HTML Logo" style={icon}/>
                     <div className='box'>
-                        <pre style={close}>
+                        <p style={close}>
                             {"\nHTML"}
-                        </pre>
+                        </p>
                     </div>
                 </div>
 
