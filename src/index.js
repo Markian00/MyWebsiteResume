@@ -13,7 +13,8 @@ root.render(
 );
 */
 const gap = {
-    padding: '60px'
+    height: '7vw',
+    minHeight: '55px'
 }
 
 const back = {

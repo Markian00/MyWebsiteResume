@@ -25,7 +25,7 @@ class NavB extends React.Component{
                 <Nav style={sticky}>
 
                     <NavMenu style={textsize}>
-                        <img src={logo} alt="Markian Voronovych Logo" width="70px" style={padded}/>
+                        <img src={logo} alt="Markian Voronovych Logo" width="12%" style={padded}/>
                         <NavLink to="/">
                             Home
                         </NavLink>
