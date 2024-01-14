@@ -57,9 +57,7 @@ const Home = () => {
         borderRadius: '1.2vw',
         textAlign: 'center',
         fontSize: '2vw',
-        marginLeft: '30%',
-        marginRight: '30%',
-        width: '40%',
+        width: 'calc(9vw + 75px)',
         fontFamily: 'Andale Mono, monospace',
         flexDirection: 'column',
         flexBasis: '100%',
@@ -247,12 +245,12 @@ const Home = () => {
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: 'calc(15px + 3vw)',
+        fontSize: 'calc(15px + 2.7vw)',
         fontFamily: 'Andale Mono, monospace',
         fontWeight: 'bold',
         marginBottom: '0px',
         marginTop: '60px',
-        lineHeight: 'calc(15px + 2.6vw)'
+        lineHeight: 'calc(15px + 3.5vw)'
     }
 
     const careerbubble ={
@@ -263,17 +261,18 @@ const Home = () => {
         color: 'white',
         fontSize: 'calc(15px + 1.2vw)',
         fontFamily: 'Courier New, monospace',
-        marginTop: '5px'
+        marginTop: '5px',
+        lineHeight: 'calc(15px + 2.6vw)'
     }
 
     const annotation = {
-        width: '20%',
+        width: '30%',
         textAlign: 'center',
-        marginLeft: '40%',
-        marginRight: '40%',
+        marginLeft: '35%',
+        marginRight: '35%',
         background: 'black',
         color: 'white',
-        fontSize: 'calc(5px + 0.8vw)',
+        fontSize: 'calc(8px + 0.7vw)',
         fontFamily: 'Courier New, monospace',
         marginTop: '0px'
     }

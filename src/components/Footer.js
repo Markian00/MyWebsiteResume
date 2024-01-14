@@ -2,7 +2,7 @@ import React from "react"
 import Logo from './headerLogo.png'
 import {Link} from "react-router-dom";
 
-const LAST_UPDATED = "December 2023"
+const LAST_UPDATED = "January 2024"
 class Footer extends React.Component {
     render(){
 
