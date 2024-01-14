@@ -136,7 +136,7 @@ const Home = () => {
     const centered = {
         margin: 'auto',
         textAlign: 'center',
-        fontSize: 'calc(10px + 2.7vw)'
+        fontSize: '4vw'
     }
 
     const fill = {
@@ -218,8 +218,7 @@ const Home = () => {
         flex: '1',
         display: 'flex',
         color:'white',
-        textAlign: 'center',
-        height: '10vw'
+        textAlign: 'center'
     }
 
     const close = {
@@ -312,7 +311,7 @@ const Home = () => {
 
                 <div style={divsplit}>
                     <div style={imagecol}>
-                        <a href="https://github.com/Markian00">
+                        <a href="https://github.com/Markian00" style={centered}>
                             <button style={button_paragraph} className='btn'>
 
                                 <img src={GitHub} alt='github' style={fill}/>
@@ -321,7 +320,7 @@ const Home = () => {
 
                     </div>
                     <div style={imagecol}>
-                        <a href="https://www.linkedin.com/in/markian-voronovych-1b930322b">
+                        <a href="https://www.linkedin.com/in/markian-voronovych-1b930322b" style={centered}>
                             <button className='btn' style={button_paragraph}>
 
                                 <img src={LinkedIn} alt='github' style={fill}/>
@@ -329,7 +328,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div style={imagecol}>
-                        <a href="https://app.joinhandshake.com/stu/users/45887067">
+                        <a href="https://app.joinhandshake.com/stu/users/45887067" style={centered}>
                             <button className='btn' style={button_paragraph}>
 
                                 <img src={Handshake} alt='github' style={fill}/>
