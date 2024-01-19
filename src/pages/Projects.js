@@ -136,14 +136,14 @@ const Projects = () => {
                     <div style={smallcarouselbox}>
                         <h style={subheader}> Stock Information Site (In Progress)</h>
                         <div style={gap}></div>
-                        <p> Work In Progress
+                        <p> My backend is comprised of a MongoDB database and a data fetching and processing API. The API provides publicly available data on any stock. When provided with 2 stocks and a date the API returns correlation between them. The website allows for you to put in your portfolio data to give you a "Portfolio diversification" measure. It stores your portfolio data as part of your user info.
                         </p>
                         <div style={gap}></div>
                         <p style={annotation}>
                             Languages: Python, Javascript
                         </p>
                         <p style={annotation}>
-                            Tech Stack: ReactJS, Flask, MongoDB, Node.js
+                            Tech Stack: ReactJS, MongoDB, Node.js,
                         </p>
 
                     </div>

@@ -8,10 +8,9 @@ const pdf = {
 }
 const Resume = () => {
     window.scrollTo(0,0)
-    const pdfURL = 'https://markianresume2024-553360963633.s3-accesspoint.us-east-2.amazonaws.com/Markian_Voronovych_Resume_2024.pdf';
 
     return (
-        <iframe style={pdf} src="https://markianresume.s3.us-east-2.amazonaws.com/Markian_Voronovych_Resume_2024.pdf" title="Mark's Resume"></iframe>
+        <iframe style={pdf} src="https://markianresume.s3.us-east-2.amazonaws.com/Markian_Voronovych_Resume.pdf" title="Mark's Resume"></iframe>
     );
 };
 

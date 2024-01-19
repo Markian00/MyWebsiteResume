@@ -57,15 +57,13 @@ const Home = () => {
         borderRadius: '1.2vw',
         textAlign: 'center',
         fontSize: '2vw',
-        marginLeft: '30%',
-        marginRight: '30%',
-        width: '40%',
+        width: 'calc(9vw + 75px)',
         fontFamily: 'Andale Mono, monospace',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
+        color: 'white',
         display: 'block',
-        color: 'black',
         lineHeight: '2.4vw',
         boxSizing: 'borderBox',
         borderStyle: 'solid',
@@ -135,7 +133,8 @@ const Home = () => {
 
     const centered = {
         margin: 'auto',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontSize: '4vw'
     }
 
     const fill = {
@@ -246,12 +245,12 @@ const Home = () => {
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: 'calc(15px + 3vw)',
+        fontSize: 'calc(15px + 2.7vw)',
         fontFamily: 'Andale Mono, monospace',
         fontWeight: 'bold',
         marginBottom: '0px',
         marginTop: '60px',
-        lineHeight: 'calc(15px + 2.6vw)'
+        lineHeight: 'calc(15px + 3.5vw)'
     }
 
     const careerbubble ={
@@ -262,17 +261,18 @@ const Home = () => {
         color: 'white',
         fontSize: 'calc(15px + 1.2vw)',
         fontFamily: 'Courier New, monospace',
-        marginTop: '5px'
+        marginTop: '5px',
+        lineHeight: 'calc(15px + 2.6vw)'
     }
 
     const annotation = {
-        width: '20%',
+        width: '30%',
         textAlign: 'center',
-        marginLeft: '40%',
-        marginRight: '40%',
+        marginLeft: '35%',
+        marginRight: '35%',
         background: 'black',
         color: 'white',
-        fontSize: 'calc(5px + 0.8vw)',
+        fontSize: 'calc(8px + 0.7vw)',
         fontFamily: 'Courier New, monospace',
         marginTop: '0px'
     }
@@ -301,7 +301,7 @@ const Home = () => {
             <div style={seperator}></div>
             <div style={seperator}></div>
 
-            <div className="fade">
+            <div>
                 <p style={namebubble}> Markian Voronovych </p>
                 <p style={careerbubble}> Software Engineer </p>
                 <hr style={dash}/>
@@ -353,7 +353,7 @@ const Home = () => {
 
 
             <div style={divsplitlist}>
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                 <img src={Cpp} alt="C++ Logo" style={icon}/>
                     <div className='box'>
                         <p style={close}>
@@ -365,7 +365,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={Java} alt="Java Logo" style={icon}/>
                     <div className='box'>
                     <p style={close}>
@@ -377,7 +377,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={Python} alt="Python Logo" style={icon}/>
                     <div className='box'>
                         <p style={close}>
@@ -392,7 +392,7 @@ const Home = () => {
             </div>
 
             <div style={divsplitlist}>
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={JavaScript} alt="JavaScript Logo" style={icon}/>
                     <div className='box'>
                         <p style={close}>
@@ -405,22 +405,22 @@ const Home = () => {
 
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
                     <img src={CSS} alt="CSS Logo" style={icon}/>
                     <div className='box'>
-                        <pre style={close}>
+                        <p style={close}>
                             {"\nCSS"}
-                        </pre>
+                        </p>
                     </div>
                 </div>
 
-                <div style={imagecol} className="fade">
+                <div style={imagecol}>
 
                     <img src={HTML} alt="HTML Logo" style={icon}/>
                     <div className='box'>
-                        <pre style={close}>
+                        <p style={close}>
                             {"\nHTML"}
-                        </pre>
+                        </p>
                     </div>
                 </div>
 

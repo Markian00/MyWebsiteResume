@@ -2,7 +2,7 @@ import React from "react"
 import Logo from './headerLogo.png'
 import {Link} from "react-router-dom";
 
-const LAST_UPDATED = "December 2023"
+const LAST_UPDATED = "January 2024"
 class Footer extends React.Component {
     render(){
 
@@ -28,10 +28,11 @@ class Footer extends React.Component {
         const footheader = {
             color: 'black',
             textDecoration: 'none',
-            fontSize: 'calc(10px + 1.1vw)',
+            fontSize: 'calc(8px + 1.0vw)',
             marginBottom: '15px',
             marginTop: '0px',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            lineHeight: 'calc(14px + 1.1vw)'
         }
 
         const divsplit = {
