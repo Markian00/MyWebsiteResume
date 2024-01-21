@@ -19,7 +19,7 @@ const carouselbox = {
     padding: '2vw',
     color: 'black',
     lineHeight: 'calc(10px + 2vw)',
-    height: 'calc(200px + 34vw)'
+    height: 'calc(400px + 35vw)'
 }
 
 const smallcarouselbox = {
@@ -36,7 +36,7 @@ const smallcarouselbox = {
     padding: '2vw',
     color: 'black',
     lineHeight: 'calc(10px + 2vw)',
-    height: 'calc(200px + 22vw)'
+    height: 'calc(240px + 22vw)'
 }
 
 const subheader = {
@@ -91,7 +91,7 @@ const Projects = () => {
         <div>
             <h1 style={header}>Personal Projects</h1>
             <h1 style={specifics}>Available on Github</h1>
-            <Carousel>
+            <Carousel prevLabel = {null} nextLabel = {null} indicators={false}>
                 <Carousel.Item>
                     <div style={smallcarouselbox}>
                         <h style={subheader}> The Website Resume</h>
@@ -153,7 +153,7 @@ const Projects = () => {
                         <h style={subheader}> Top Down Platformer (Failed)</h>
                         <div style={gap}></div>
                         <p> Project with 3 team members that was focused on building a simple platformer where the
-                            player could interact with NPCs dynamically (NPCs didn't have hardcoded responses). Failed
+                            player could interact with NPCs dynamically (Using LLM/ML). Failed
                             due to loss of our C# specialist. Python scripts that create text for the AI and enable
                             conversation are available upon request (My half of the project).
                         </p>
@@ -173,7 +173,7 @@ const Projects = () => {
 
             <h1 style={header}>School Projects</h1>
             <h1 style={specifics}>Available only on Request</h1>
-            <Carousel>
+            <Carousel prevLabel = {null} nextLabel = {null} indicators={false}>
                 <Carousel.Item>
                     <div style={carouselbox}>
                         <h style={subheader}> EECS370: Intro to Computer Organization</h>
@@ -293,7 +293,7 @@ const Projects = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <div style={carouselbox}>
-                        <h style={subheader}> CSC207H1</h>
+                        <h style={subheader}> CSC207H1: Intro to Software Design</h>
                         <div style={gap}></div>
                         <p>
                             Project: Working in a group of 5 people we built a mock online marketplace. This involved
@@ -317,7 +317,7 @@ const Projects = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <div style={carouselbox}>
-                        <h style={subheader}> CSC148H1</h>
+                        <h style={subheader}> CSC148H1: Intro to Computer Science</h>
                         <div style={gap}></div>
                         <p>
                             Project 1: Racoon Trash Can Game, implement a game where you herd raccoons into trashcans.
@@ -340,7 +340,7 @@ const Projects = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <div style={carouselbox}>
-                        <h style={subheader}> CSC108H1</h>
+                        <h style={subheader}> CSC108H1: Intro to Computer Programming</h>
                         <div style={gap}></div>
                         <p>
                             Project 1: The Slide Game, simple assignment focused on understanding docstrings and

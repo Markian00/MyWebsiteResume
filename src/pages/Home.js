@@ -109,20 +109,13 @@ const Home = () => {
         lineHeight: 'calc(10px + 1.8vw)'
     }
 
-    const smallheight = {
-        fontSize: '2vw',
-        margin: 'auto',
-        marginTop: '10px',
-        marginBottom: '10px'
-    }
-
     const welcome = {
 
         background: '#EDC25E',
         fontSize: '1.7vw',
         width: '100%',
         //borderRadius: '25px',
-        marginTop: '-5px',
+        marginTop: 'calc(-4.2vw + 23px)',
         marginBottom: '0px',
         flexBasis: '100%',
         flex: '1',

@@ -1,9 +1,10 @@
 import React from "react"
-import home from "./Home";
+import "./Academics.css"
 import UM from "./icons/University of Michigan Image.jpg"
 import UT from "./icons/University of Toronto Image.jpg"
 import PSI from "./icons/PSI.jpeg"
 import Collapsible from 'react-collapsible'
+import {BsChevronDown} from "react-icons/bs"
 
 const homeheading = {
     margin: 'auto',
@@ -47,7 +48,8 @@ const university_text = {
     marginTop: '0px',
     width: "100%",
     fontFamily: 'Andale Mono, monospace',
-    fontSize: '1.25vw',
+    fontSize: 'calc(8px + 1vw)',
+    lineHeight: 'calc(20px + 1vw)',
     fontWeight: 'normal',
 }
 
@@ -75,7 +77,7 @@ const gpa_paragraph = {
     lineHeight: '4vw',
     boxSizing: 'borderBox',
     borderRadius: '4vw',
-    marginBottom: '100px',
+    marginBottom: 'calc(3.7vw + 40px)',
     marginTop: '50px',
     marginLeft: '6%',
     marginRight: '6%',
@@ -85,14 +87,14 @@ const gpa_paragraph = {
 
 const dropwindow = {
     lineHeight: '80px',
-    borderRadius: '1vw',
+    borderRadius: 'calc(1.5vw + 5px)',
     marginLeft: "12%",
     marginRight: '12%',
     width: '76%',
     background: '#d0b36d',
     textAlign: 'center',
     fontFamily: 'Andale Mono, monospace',
-    fontSize: '3vw',
+    fontSize: 'calc(2.4vw + 5px)',
     fontWeight: 'bold',
     marginBottom: '70px'
 
@@ -113,7 +115,7 @@ const annotation = {
     width: '100%',
     textAlign: 'center',
     color: 'black',
-    fontSize: '1.3vw',
+    fontSize: 'calc(4px + 1.3vw)',
     fontFamily: 'Andale Mono, monospace',
     marginTop: '-15%'
 }
@@ -122,7 +124,7 @@ const rmargin = {
     marginBottom: '5px',
     marginTop: '10px',
     textAlign: 'left',
-    lineHeight: '1.3vw',
+    lineHeight: 'calc(10px + 1.0vw)',
     color: 'black',
     fontWeight: 'normal'
 }
@@ -136,12 +138,12 @@ const Academics = () => {
             </h1>
             <hr style={dash}/>
             <div style={divsplit}>
-                <p style={gpa_paragraph}>
+                <div style={gpa_paragraph}>
                     <p style={annotation}>
-                        Cumulative GPA 2023
+                        Cumulative GPA Fall 2023
                     </p>
                     3.77
-                </p>
+                </div>
                 <p style={gpa_paragraph}>
                     <p style={annotation}>
                         Semester GPA Fall 2023
@@ -151,7 +153,7 @@ const Academics = () => {
             </div>
 
             <div style={dropwindow}>
-                <Collapsible trigger="University of Michigan (2023 - 2025)" style={collapse}>
+                <Collapsible trigger={["University of Michigan (2023 - 2025)", <BsChevronDown/>]} style={collapse}>
                     <div style={university_text}>
                         <div style={divsplit}>
                             <div style={uni_image}>
@@ -233,7 +235,7 @@ const Academics = () => {
             </div>
 
             <div style={dropwindow}>
-                <Collapsible trigger="University of Toronto (2021 - 2022)" style={collapse}>
+                <Collapsible trigger={["University of Toronto (2021 - 2022)", <BsChevronDown/>]} style={collapse}>
                     <div style={university_text}>
                         <div style={divsplit}>
                             <div style={uni_image}>
@@ -306,7 +308,7 @@ const Academics = () => {
             </div>
 
             <div style={dropwindow}>
-                <Collapsible trigger="Highschool: PSI (IB Diploma)" style={collapse}>
+                <Collapsible trigger={["Highschool: PSI (IB Diploma)", <BsChevronDown/>]} style={collapse}>
                     <div style={university_text}>
                         <div style={divsplit}>
                             <div style={uni_image}>

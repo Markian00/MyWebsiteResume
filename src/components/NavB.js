@@ -11,11 +11,12 @@ const sticky = {
     padding: '16px'
 }
 const padded = {
-    padding: '2.5vw'
+    marginRight: '2.2vw',
+    marginLeft: '2.2vw'
 }
 
 const textsize = {
-    fontSize: "1.5vw"
+    fontSize: "1100px"
 }
 class NavB extends React.Component{
     render(){
@@ -25,7 +26,7 @@ class NavB extends React.Component{
                 <Nav style={sticky}>
 
                     <NavMenu style={textsize}>
-                        <img src={logo} alt="Markian Voronovych Logo" width="12%" style={padded}/>
+                        <img src={logo} alt="Markian Voronovych Logo" width="6.5%" style={padded}/>
                         <NavLink to="/">
                             Home
                         </NavLink>
