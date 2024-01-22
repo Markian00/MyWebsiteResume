@@ -12,7 +12,7 @@ const homeheading = {
     textAlign: 'center',
     fontFamily: 'Andale Mono, monospace',
     fontWeight: 'bold',
-    fontSize: '57px',
+    fontSize: 'calc(20px + 4vw)',
     marginTop: '50px',
     color: '#d0b36d'
 }
@@ -48,7 +48,7 @@ const university_text = {
     marginTop: '0px',
     width: "100%",
     fontFamily: 'Andale Mono, monospace',
-    fontSize: 'calc(8px + 1vw)',
+    fontSize: 'calc(9px + 1vw)',
     lineHeight: 'calc(20px + 1vw)',
     fontWeight: 'normal',
 }
@@ -86,7 +86,7 @@ const gpa_paragraph = {
 }
 
 const dropwindow = {
-    lineHeight: '80px',
+    lineHeight: '5vh',
     borderRadius: 'calc(1.5vw + 5px)',
     marginLeft: "12%",
     marginRight: '12%',
@@ -94,9 +94,9 @@ const dropwindow = {
     background: '#d0b36d',
     textAlign: 'center',
     fontFamily: 'Andale Mono, monospace',
-    fontSize: 'calc(2.4vw + 5px)',
+    fontSize: 'calc(1.5vw + 5px)',
     fontWeight: 'bold',
-    marginBottom: '70px'
+    marginBottom: '5vh'
 
 }
 

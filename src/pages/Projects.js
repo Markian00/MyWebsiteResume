@@ -9,31 +9,31 @@ const carouselbox = {
     textAlign: 'center',
     background: '#d0b36d',
     borderRadius: '25px',
-    fontFamily: 'Andale Mono, monospace',
+    fontFamily: 'Josefin Sans',
     fontSize: 'calc(8px + 1vw)',
     width: '70%',
     marginTop: '10px',
     marginRight: '15%',
     marginLeft: '15%',
     marginBottom: '20px',
-    padding: '2vw',
+    padding: 'calc(10px + 2vw)',
     color: 'black',
     lineHeight: 'calc(10px + 2vw)',
-    height: 'calc(400px + 35vw)'
+    height: 'calc(300px + 35vw)'
 }
 
 const smallcarouselbox = {
     textAlign: 'center',
     background: '#d0b36d',
     borderRadius: '25px',
-    fontFamily: 'Andale Mono, monospace',
+    fontFamily: 'Josefin Sans',
     fontSize: 'calc(8px + 1vw)',
     width: '70%',
     marginTop: '10px',
     marginRight: '15%',
     marginLeft: '15%',
     marginBottom: '20px',
-    padding: '2vw',
+    padding: 'calc(10px + 2vw)',
     color: 'black',
     lineHeight: 'calc(10px + 2vw)',
     height: 'calc(240px + 22vw)'
@@ -70,7 +70,7 @@ const specifics = {
     textAlign: 'center',
     background: 'black',
     fontSize: 'calc(6px + 1.3vw)',
-    fontFamily: 'Andale Mono, monospace',
+    fontFamily: 'Josefin Sans',
     margin: 'auto',
     marginTop: '-20px',
     padding: '2vw',
@@ -81,7 +81,7 @@ const specifics = {
 const annotation = {
     lineHeight: 'calc(10px + 1vw)',
     textAlign: 'left',
-    fontFamily: 'Andale Mono, monospace',
+    fontFamily: 'Josefin Sans',
     fontSize: 'calc(10px + 0.7vw)',
     fontWeight: 'bold'
 }

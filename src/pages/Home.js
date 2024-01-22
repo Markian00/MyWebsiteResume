@@ -10,14 +10,12 @@ import CSS from "./icons/Css Logo Inverted.png"
 import HTML from "./icons/HTML Logo Inverted.png"
 import cloudIcon from "./icons/inverted Server Icon.png"
 import designIcon from "./icons/Design Icon Inverted.png"
-import GoldCircle from "./icons/GoldLogoCircle.png"
 import selfImage from "./icons/MeBlackAndWhite.jpg"
 
 import GitHub from "./icons/GitHub Icon Inverted.png"
 import LinkedIn from "./icons/LinkedIn Icon Inverted.png"
 import Handshake from "./icons/Handshake Icon Inverted.png"
 
-import placeholder from "./placeholder.png"
 import languageIcon from "./icons/Languages Icon Inverted.png";
 
 const Home = () => {
@@ -33,24 +31,6 @@ const Home = () => {
         fontWeight: 'bold',
         marginBottom: '3.4vw',
         color: "white",
-    }
-
-    const bubble_paragraph = {
-
-        //background: 'white',
-        fontSize: '1vw',
-        width: '50%',
-        //borderRadius: '25px',
-        fontFamily: 'Andale Mono, monospace',
-        marginBottom: '0px',
-        marginLeft: '0%',
-        marginRight: '0%',
-        flexDirection: 'column',
-        flexBasis: '100%',
-        flex: '1',
-        display: 'flex',
-        color: 'white',
-        lineHeight: '2.4vw'
     }
 
     const button_paragraph = {
@@ -73,10 +53,10 @@ const Home = () => {
     const cloud_paragraph = {
         textAlign: 'center',
         background: '#d0b36d',
-        fontSize: '2vw',
+        fontSize: 'calc(5px + 1.8vw)',
         padding: '5%',
         width: '60%',
-        fontFamily: 'Andale Mono, monospace',
+        fontFamily: 'Josefin Sans',
         flexDirection: 'column',
         flexBasis: '100%',
         flex: '1',
@@ -97,7 +77,8 @@ const Home = () => {
         fontSize: 'calc(7px + 1vw)',
         padding: '2vw',
         //borderRadius: '25px',
-        fontFamily: 'Andale Mono, monospace',
+        fontFamily: 'Josefin Sans',
+        fontWeight: 'normal',
         marginBottom: '0px',
         marginRight: '6.5vw',
         marginLeft: '6.5vw',
@@ -106,13 +87,14 @@ const Home = () => {
         flex: '1',
         display: 'flex',
         color: 'black',
-        lineHeight: 'calc(10px + 1.8vw)'
+        lineHeight: 'calc(10px + 2.3vw)'
     }
 
     const welcome = {
 
-        background: '#EDC25E',
+        background: '#d7b362',
         fontSize: '1.7vw',
+        fontWeight: 'bold',
         width: '100%',
         //borderRadius: '25px',
         marginTop: 'calc(-4.2vw + 23px)',
@@ -121,7 +103,7 @@ const Home = () => {
         flex: '1',
         display: 'flex',
         color: 'black',
-        lineHeight: '2.4vw'
+        lineHeight: '2.7vw'
     }
 
     const centered = {
@@ -165,12 +147,8 @@ const Home = () => {
         margin: 'auto'
     }
 
-    const back = {
-        background: 'black'
-    }
-
     const seperator = {
-        background: '#9A7623',
+        background: '#9c7a2e',
         width: "100%",
         height: "10px",
         marginTop: "0px",
@@ -196,7 +174,7 @@ const Home = () => {
         borderStyle: 'solid',
         borderColor: 'black',
         marginLeft: "7%",
-        marginBottom: '30px',
+        marginBottom: '2vw',
         color: 'black'
     }
 
@@ -219,11 +197,6 @@ const Home = () => {
         fontSize: 'calc(8px + 0.7vw)'
     }
 
-    const logo = {
-        marginTop: "70px",
-        width: '35%'
-    }
-
     const cloud = {
         width: '22%',
         marginTop: '80px',
@@ -242,20 +215,20 @@ const Home = () => {
         fontFamily: 'Andale Mono, monospace',
         fontWeight: 'bold',
         marginBottom: '0px',
-        marginTop: '60px',
-        lineHeight: 'calc(15px + 3.5vw)'
+        marginTop: '4vw',
+        lineHeight: 'calc(15px + 3.4vw)'
     }
 
     const careerbubble ={
 
-        width: '30%',
+        width: '27%',
         marginLeft: '10%',
         background: 'black',
         color: 'white',
-        fontSize: 'calc(15px + 1.2vw)',
+        fontSize: 'calc(11px + 2.4vw)',
         fontFamily: 'Courier New, monospace',
-        marginTop: '5px',
-        lineHeight: 'calc(15px + 2.6vw)'
+        marginTop: '0.3vw',
+        lineHeight: 'calc(15px + 2.8vw)'
     }
 
     const annotation = {
@@ -265,8 +238,10 @@ const Home = () => {
         marginRight: '35%',
         background: 'black',
         color: 'white',
+        //fontWeight: 'bold',
         fontSize: 'calc(8px + 0.7vw)',
-        fontFamily: 'Courier New, monospace',
+        fontFamily: 'Josefin Sans',
+
         marginTop: '0px'
     }
 
@@ -287,7 +262,7 @@ const Home = () => {
                         fit for your employment needs, you can look no further.
                         I am a self-starter, a creative problem solver and a hard worker. I am passionate about
                         programming and always looking to improve my self and my skills. Please enjoy your journey
-                        through these pages as you better understand how my skills and experiences match your current needs.
+                        through these pages as you better understand how my skills and experiences match your needs.
                     </p>
                 </div>
             </div>

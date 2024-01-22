@@ -1,9 +1,8 @@
 import React from "react"
-import { PDFViewer, Document, Page } from '@react-pdf/renderer';
 
 const pdf = {
     width: "100%",
-    height: "100vh",
+    height: "150vh",
     border: "1px solid black"
 }
 const Resume = () => {
